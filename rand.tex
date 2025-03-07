@@ -1,0 +1,213 @@
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Pragalvha Sharma} \\ \vspace{1pt}
+    \small{
+    \href{tel:+16476384974}{(647)-638-4974} $|$
+    \href{mailto:pragalvhasharma@gmail.com}{\underline{pragalvhasharma@gmail.com}} $|$
+    \href{https://github.com/PragalvhaSharma}{\underline{github.com/PragalvhaSharma}}
+    }
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Western Ontario}{London, Ontario, Canada}
+    {Bachelor of Science in Computer Science and Ivey Business School AEO Status}{September 2023 - April 2027}
+  \resumeSubheading
+    {Central Peel Secondary School}{Brampton, Ontario, Canada}
+    {Ontario Secondary School Diploma (Scholar)}{September 2019 - June 2023}
+    \resumeItemListStart
+      \resumeItem{Top 6 Grade 12 Average: 98\%}
+      \resumeItem{Advanced Placement Exam High Achiever: AP Psychology (5), AP Calculus (5)}
+      \resumeItem{Advanced Placement Gold Standard}
+      \resumeItem{Leadership: FIRST Robotics Team, CPSS Programming, Financial Leadership Association, Link Crew}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Blanc AI}{London, Ontario}
+    {Cofounder $|$ \textup{\texttt{React, Django, LLMs}}}{September 2023 - Present}
+    \resumeItemListStart
+      \resumeItem{Co-developed an agentic architecture with Large Language Models to generate enterprise software when given a company's business problem/logic}
+      \resumeItem{Wrote code to generate React Frontend and Django Backend}
+      \resumeItem{Backed by Western Accelerator from Morrissette Institute for Entrepreneurship (\$12,000)}
+      \resumeItem{Backed by Ripple Ventures (Ripple X Fellowship)}
+    \resumeItemListEnd
+  
+  \resumeSubheading
+    {Infin8}{Remote}
+    {Full Stack Engineer $|$ \textup{\texttt{React, Django, PostgreSQL, AWS, LLMs}}}{April 2024 - August 2024}
+    \resumeItemListStart
+      \resumeItem{Contributed to developing and maintaining ERP systems for 3+ clients using React for front-end development}
+      \resumeItem{Used Django for the back end, PostgreSQL for database management, and deployment on AWS}
+      \resumeItem{Built a text to SQL agent to query databases for a medium sized company, using LLM agents}
+      \resumeItem{Assisted with common bug fixes within the ERP systems to improve system performance and reliability}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Mustang Capital}{London, Ontario}
+    {Quantitative Analyst $|$ \textup{\texttt{APIs, Flask}}}{February 2024 - Present}
+    \resumeItemListStart
+      \resumeItem{Developed an algorithm to identify positive arbitrage opportunities between Polymarket and sports betting sites}
+      \resumeItem{Optimized betting strategies by calculating the precise amount to wager for maximum returns}
+      \resumeItem{Currently working on automating trades for autonomous execution}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Ace It Digital}{Remote}
+    {Business Development Intern $|$ \textup{\texttt{LLMs, RAG}}}{September 2023 - November 2023}
+    \resumeItemListStart
+      \resumeItem{Built an LLM workflow to generate email responses by leveraging retrieval-augmented generation (RAG)}
+      \resumeItem{Engaged with customers to explain the benefits of Ace It Digital's platform for minority-led businesses}
+      \resumeItem{Educated businesses on leveraging digital tools and technologies to enhance their operations}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{NASA/NSS Gerard K.O'Neill Space Settlement Contest: Gaia's Hope}}{October 2022 - May 2023}
+      \resumeItemListStart
+        \resumeItem{Earned 1st place globally, outperforming 26,725 students across 19 countries and surpassing 4,567 entries}
+        \resumeItem{Implemented a governance structure, devised a wind energy blueprint, conducted critical calculations and created a blockchain-based native currency}
+        \resumeItem{Successfully secured \$20,000 in funding for participation in the 2023 International Space Development Conference}
+      \resumeItemListEnd
+      
+  \resumeProjectHeading
+      {\textbf{Central Peel Robotics Innovation Contest: Playfit App}}{November 2020 - April 2021}
+      \resumeItemListStart
+        \resumeItem{Built modules for a fitness app tailored to engage and motivate youth aged 8 to 13}
+        \resumeItem{Achieved recognition as a Semifinalist among 3,225 teams and 80,000 students}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages:}{\ Python, JavaScript, Java, C} \\
+    \textbf{Technologies:}{\ React, Django, Vector Databases, Large Language Models} \\
+    \textbf{Interests:}{\ Startups, Artificial Intelligence, Animation}
+    }}
+\end{itemize}
+
+\end{document}
