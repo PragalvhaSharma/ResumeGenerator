@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 MAR 2026 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 MAR 2026 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**rand.tex
-(./rand.tex
+**PragalvhaSharmaResume.tex
+(./PragalvhaSharmaResume.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -304,8 +304,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box56
 )
-(./rand.aux)
-\openout1 = `rand.aux'.
+No file PragalvhaSharmaResume.aux.
+\openout1 = `PragalvhaSharmaResume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
 LaTeX Font Info:    ... okay on input line 107.
@@ -325,7 +325,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
 LaTeX Font Info:    ... okay on input line 107.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
 LaTeX Font Info:    ... okay on input line 107.
-
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count288
@@ -341,9 +340,8 @@ LaTeX Font Info:    ... okay on input line 107.
 \everyMPtoPDFconversion=\toks27
 )
 Package hyperref Info: Link coloring OFF on input line 107.
- (./rand.out) (./rand.out)
 \@outlinefile=\write3
-\openout3 = `rand.out'.
+\openout3 = `PragalvhaSharmaResume.out'.
 
 
 
@@ -376,7 +374,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-(./rand.aux)
+(./PragalvhaSharmaResume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -385,17 +383,23 @@ L3 programming layer <2025-01-18>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `rand.out' has not changed.
-(rerunfilecheck)             Checksum: 8178769A591DAE54593BE5DC5893BD68;390.
+
+Package rerunfilecheck Warning: File `PragalvhaSharmaResume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PragalvhaSharmaResume.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  8178769A591DAE54593BE5DC5893BD68;390.
  ) 
 Here is how much of TeX's memory you used:
- 12421 strings out of 473190
- 193894 string characters out of 5715801
- 633888 words of memory out of 5000000
- 35535 multiletter control sequences out of 15000+600000
+ 12408 strings out of 473190
+ 193939 string characters out of 5715801
+ 633962 words of memory out of 5000000
+ 35528 multiletter control sequences out of 15000+600000
  563914 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,251b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,268b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -408,10 +412,10 @@ al/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local
 exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb>
-Output written on rand.pdf (1 page, 161355 bytes).
+Output written on PragalvhaSharmaResume.pdf (1 page, 161088 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

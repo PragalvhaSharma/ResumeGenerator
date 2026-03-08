@@ -15,7 +15,7 @@ A LaTeX-based resume template for efficiently generating professional resumes. T
 
 ## 📂 Files  
 
-- `rand.tex` – LaTeX template for resume generation  
+- `PragalvhaSharmaResume.tex` – LaTeX template for resume generation  
 
 ## 📌 Prerequisites  
 
@@ -34,9 +34,9 @@ git clone https://github.com/your-username/ResumeGenerator.git
 cd ResumeGenerator
 ```
 
-### 2️⃣ Edit `rand.tex`  
+### 2️⃣ Edit `PragalvhaSharmaResume.tex`  
 
-Modify the following sections in `rand.tex`:  
+Modify the following sections in `PragalvhaSharmaResume.tex`:  
 - **Personal Information** – Name, email, phone, and links  
 - **Education** – Degree, school, and achievements  
 - **Experience** – Job roles, projects, and responsibilities  
@@ -46,7 +46,7 @@ Modify the following sections in `rand.tex`:
 ### 3️⃣ Compile the Resume  
 
 #### **Using Overleaf** (Online)  
-1. Upload `rand.tex`  
+1. Upload `PragalvhaSharmaResume.tex`  
 2. Edit as needed  
 3. Click **Recompile**  
 4. Download the generated **PDF**  
@@ -54,15 +54,15 @@ Modify the following sections in `rand.tex`:
 #### **Using Command Line** (Local)  
 
 ```bash
-pdflatex rand.tex
+pdflatex PragalvhaSharmaResume.tex
 ```
 
-This will generate `rand.pdf`, the final resume file.
+Or run `./build.sh`. Output is always `PragalvhaSharmaResume.pdf`.
 
 ## 🔧 Customization  
 
 ### Change Fonts  
-Uncomment one of the font packages in `rand.tex` to switch between **serif** and **sans-serif** styles.  
+Uncomment one of the font packages in `PragalvhaSharmaResume.tex` to switch between **serif** and **sans-serif** styles.  
 
 ### Adjust Margins  
 Modify the `\addtolength{}` commands under the "Adjust margins" section to tweak spacing.  
