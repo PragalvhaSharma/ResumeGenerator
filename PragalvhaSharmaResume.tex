@@ -17,9 +17,16 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{iftex}
+\ifXeTeX
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
 \usepackage{fontawesome}
-\input{glyphtounicode}
-\pdfgentounicode=1
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 
 %----------FONT OPTIONS----------
@@ -58,8 +65,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% XeTeX emits Unicode text directly; pdfTeX uses glyphtounicode above.
 
 %-------------------------
 % Custom commands
@@ -128,7 +134,7 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {University of Western Ontario}{London, Ontario, Canada}
-    {Bachelor of Science in Computer Science}{September 2023 - April 2027}
+    {Bachelor of Science in Computer Science $|$ \textup{82\% Average}}{September 2023 - April 2027}
   \resumeSubheading
     {Ivey Business School}{London, Ontario, Canada}
     {Honours in Business Administration}{September 2025 - April 2027}
@@ -138,11 +144,18 @@
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
+    {Opendoor}{Toronto, Ontario}
+    {AI Operations Engineer $|$ \textup{\texttt{Claude Code, Codex, Cursor, Next.js, Docker}}}{May 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Built \textbf{Paintbot}, an AI-driven system that processed \textbf{100{,}000 paint orders} and fully automated \textbf{50\% of all paint orders} end-to-end, eliminating manual human review for those orders}
+      \resumeItem{Replaced manual, subjective renovation-scoping workflows with a cost-effective automated architecture, reducing operational bottlenecks and scaling turnaround}
+      \resumeItem{Automated approximately \textbf{5{,}000 rental-scam tickets in two months}, converting repetitive case handling into reliable workflows}
+    \resumeItemListEnd
+  \resumeSubheading
     {Mely.ai}{London, Ontario}
-    {Full Stack Engineer $|$ \textup{\texttt{Vue, Docker, PostgreSQL, LLMs, Python, C\#}}}{May 2025 -- September 2025}
+    {Full Stack Engineer Intern $|$ \textup{\texttt{Vue, Docker, PostgreSQL, LLMs, Python, C\#}}}{May 2025 -- September 2025}
     \resumeItemListStart
       \resumeItem{Redesigned embeddings data movement across tables, resulting in a \textbf{300\%} efficiency gain and cutting query latency from \textbf{12s to under 3s}}
-      \resumeItem{Built an \textbf{AI-powered document refinement workflow} that improved extraction accuracy by \textbf{40\%}, eliminating \textbf{5+ hours/week} of manual corrections}
       \resumeItem{Developed a \textbf{``Create Auto Rule'' guardrail system} for extraction, reducing manual interventions by \textbf{60\%} and raising first-pass accuracy to \textbf{95\%+}}
       \resumeItem{Triaged and resolved \textbf{50+ production issues} end-to-end across the release cycle, maintaining \textbf{99.5\%} platform uptime for enterprise clients}
     \resumeItemListEnd
@@ -172,20 +185,14 @@
   \resumeProjectHeading
       {\textbf{GrokHunt $|$ \textup{\texttt{Grok, Next.js, Flask}}}}{2025}
       \resumeItemListStart
-        \resumeItem{Won \textbf{2nd place} at the xAI Hackathon as one of only \textbf{20 Canadian students} invited to participate}
-        \resumeItem{Featured on the official \textbf{xAI Twitter/X account}, garnering over \textbf{300{,}000 views}}
+        \resumeItem{Won the \textbf{xAI Hackathon} with an end-to-end Grok talent discovery, evaluation, and personalized outreach system}
+        \resumeItem{Featured by \textbf{SpaceXAI} on X, garnering nearly \textbf{300{,}000 views}}
       \resumeItemListEnd
   \resumeProjectHeading
       {\textbf{NASA/NSS Gerard K.O'Neill Space Settlement Contest: Gaia's Hope}}{October 2022 - May 2023}
       \resumeItemListStart
         \resumeItem{Earned \textbf{1st place globally}, outperforming \textbf{26{,}725} students across \textbf{19} countries and surpassing \textbf{4{,}567} entries}
         \resumeItem{Received worldwide recognition through NASA/NSS official page and featured in multiple local newspapers}
-      \resumeItemListEnd
-  \resumeProjectHeading
-      {\textbf{ERP Generator $|$ \textup{\texttt{React, Django, LLMs}}}}{August 2024 - September 2024}
-      \resumeItemListStart
-        \resumeItem{Co-developed an agentic LLM architecture that generates full-stack enterprise apps from plain-English requirements, reducing prototype delivery from \textbf{weeks to hours}}
-        \resumeItem{Auto-generated production-ready React frontends and Django backends, cutting boilerplate code by \textbf{80\%} across \textbf{5} pilot deployments}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
